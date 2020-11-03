@@ -1,0 +1,23 @@
+GET http://localhost:5000/api/rooms
+
+###
+
+POST http://localhost:5000/api/rooms HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Basic"
+}
+
+###
+
+GET http://localhost:5000/api/rooms/5fa025e6a1da8a6194838d5f
+
+###
+
+PATCH http://localhost:5000/api/rooms/5fa025e6a1da8a6194838d5f HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Basique"
+}
